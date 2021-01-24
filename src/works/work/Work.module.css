@@ -1,0 +1,41 @@
+.workBlock {
+    background-color: #c1a3d7;
+    width: 400px;
+}
+
+.captureBlock {
+    height: 400px;
+    background-color: #d7c6a3;
+    position: relative;
+}
+
+.capture {
+    height: 100%;
+    width: 100%;
+}
+
+.show {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -25px 0px 0px -75px;
+    height: 50px;
+    width: 150px;
+    background-color: #2f86cd;
+    text-align: center;
+    opacity: 0.5;
+}
+
+.textBlock{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+@media screen and (max-width: 420px) {
+    .workBlock {
+        width: 330px;
+    }
+    .captureBlock{
+        height: 330px;
+    }
+}

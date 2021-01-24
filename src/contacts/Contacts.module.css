@@ -1,0 +1,45 @@
+.contactsBlock{
+    height: 100vh;
+    background-color: #d7a3c0;
+}
+.field {
+    height: 70%;
+    width: 100%;
+    border: 1px solid;
+    position: relative;
+}
+.field h2 {
+    text-align: center;
+}
+.field button{
+    position: absolute;
+    height: 50px;
+    width: 150px;
+    bottom: 0;
+    left:50%;
+    margin-left: -75px;
+    font-size: 20px;
+}
+
+.form {
+    height: 400px;
+    max-width: 500px;
+    border: 1px solid;
+    margin: 0 auto;
+}
+.form form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form form textarea {
+    height: 50%;
+}
+
+.form form input {
+    height: 8%;
+}
+
+

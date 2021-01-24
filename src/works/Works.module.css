@@ -1,0 +1,29 @@
+.worksBlock{
+    min-height: 100vh;
+    background-color: #a3b9d7;
+}
+
+.field {
+    height: 80%;
+    width: 100%;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+}
+.titleBlock {
+    height: 20%;
+}
+.titleBlock h2 {
+    text-align: center;
+}
+.works{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1150px) {
+    .works {
+        flex-direction: column;
+        align-items: center;
+    }
+}

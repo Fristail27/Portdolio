@@ -1,0 +1,43 @@
+.footerBlock{
+    height: 45vh;
+    background-color: #9be9da;
+    box-sizing: border-box;
+}
+.footerContainer {
+    align-items: flex-end;
+}
+.field {
+    height: 70%;
+    width: 100%;
+    border: 1px solid;
+    margin-bottom: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.field h2 {
+    text-align: center;
+}
+
+.quares {
+    width: 420px;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid;
+}
+.quares div {
+    width: 60px;
+    background-color: gray;
+}
+
+@media screen and (max-width: 860px) {
+    .quares {
+        width: 250px;
+    }
+}
+
+
+
