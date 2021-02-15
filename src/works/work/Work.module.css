@@ -1,41 +1,52 @@
 .workBlock {
-    background-color: #c1a3d7;
-    width: 400px;
-}
-
-.captureBlock {
-    height: 400px;
-    background-color: #d7c6a3;
+    background-color: gray;
+    width: 360px;
+    height: 270px;
     position: relative;
 }
 
-.capture {
-    height: 100%;
-    width: 100%;
+.captureBlock {
+    background-color: #d7c6a3;
+    position: relative;
+    width: 360px;
+    height: 270px;
 }
-
-.show {
+.onHover {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    margin: -25px 0px 0px -75px;
-    height: 50px;
-    width: 150px;
-    background-color: #2f86cd;
-    text-align: center;
-    opacity: 0.5;
-}
-
-.textBlock{
+    top: 0;
+    width: 360px;
+    height: 270px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    opacity: 0;
+    transition-property: background, opacity ;
+    transition-duration:  0.6s;
+}
+.onHover:hover {
+    background: rgba(255, 255, 255, 0.85);
+    opacity: 1;
+}
+.onHover span {
+    color: black;
     text-align: center;
 }
-@media screen and (max-width: 420px) {
+
+.buttons {
+    margin: 15px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.line {
+    width: 130px;
+    height: 1px;
+    background-color: black;
+}
+@media screen and (max-width: 1100px) {
     .workBlock {
-        width: 330px;
-    }
-    .captureBlock{
-        height: 330px;
+        margin: 15px 0;
     }
 }

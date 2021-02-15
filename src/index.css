@@ -2,6 +2,13 @@
   box-sizing: border-box;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  margin: 28px 0;
+  font-weight: 400;
+  font-family: 'Kaushan Script', cursive;
+  color: #292929;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -9,6 +16,13 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  color: #898989;
+  background: #ffffff;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  font-weight: 300;
 }
 
 code {

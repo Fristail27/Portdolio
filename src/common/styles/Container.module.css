@@ -2,14 +2,24 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 70%;
     height: 100%;
     margin: 0 auto;
-    border: 1px solid;
-    flex-wrap: wrap;
     box-sizing: border-box;
+    max-width: 1160px;
 }
-@media screen and (max-width: 860px) {
+
+@media screen and (min-width: 1160px) {
+    .container {
+        width: 1160px;
+    }
+}
+@media screen and (max-width: 1160px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 933px) {
     .container {
         display: flex;
         flex-direction: column;

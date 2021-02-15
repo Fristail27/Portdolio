@@ -1,15 +1,21 @@
 import React from "react";
-import s from "./Freelance.module.css"
+import s from "./Freelance.module.scss"
 import containerStyle from "./../common/styles/Container.module.css"
-import Button from "../common/button/Button";
+import {Link} from "react-scroll";
 
 const Freelance = () => {
     return (
         <div className={s.freestyleBlock}>
             <div className={containerStyle.container}>
                 <div className={s.field}>
-                    <h2>Рассматриваю варианты удаленной работы</h2>
-                    <Button name={"Нанять меня"}/>
+                    <h2>I'm Open To Work</h2>
+                    <Link
+                        to="contact"
+                        spy={true}
+                        smooth={true}
+                        offset={60}
+                        duration= {500}
+                    >Hide Me</Link>
                 </div>
             </div>
         </div>

@@ -1,25 +1,42 @@
-import React from "react";
+import React, {useState} from "react";
 import s from "./Work.module.css"
 import Button from "../../common/button/Button";
 
 type WorkPropsType = {
-    name:string
-    description:string
+    name: string;
+    description: string;
+    img?: string;
+    gitHubLink?: string;
+    demoLink?:string
 }
 
-const Work:React.FC<WorkPropsType> = (props) => {
+const Work: React.FC<WorkPropsType> = (props) => {
+
+    let [blockStatus, setBlockStatus] = useState<boolean>(false)
+
     return (
-        <div className={s.workBlock}>
+        <div
+            onMouseLeave={() => {
+                setTimeout(()=> setBlockStatus(false), 500)
+            }}
+            onMouseOver={() => setBlockStatus(true)}
+            className={s.workBlock}>
             <div className={s.captureBlock}>
-                <div className={s.capture}>1</div>
-                <div className={s.show}>
-                    <Button name={"Смотреть"}/>
+                <img src={props.img} alt=""/>
+            </div>
+            {blockStatus
+                ? <div className={s.onHover}>
+                    <h2>{props.name}</h2>
+                    <div className={s.line}/>
+                    <span>{props.description}</span>
+                    <div className={s.line}/>
+                    <div className={s.buttons}>
+                        <Button onClick={() =>  window.open(props.gitHubLink as string)} name={"GitHub"}/>
+                        <Button onClick={() =>  window.open(props.demoLink as string)} name={"Demo"}/>
+                    </div>
                 </div>
-            </div>
-            <div className={s.textBlock}>
-                <h3>{props.name}</h3>
-                <span>{props.description}</span>
-            </div>
+                : ""
+                    }
         </div>
     )
 }

@@ -2,21 +2,27 @@ import React from "react";
 import s from "./Contacts.module.css"
 import containerStyle from "./../common/styles/Container.module.css"
 import Button from "../common/button/Button";
+import {TextField} from "@material-ui/core";
 
 const Contacts = () => {
+
     return (
-        <div className={s.contactsBlock}>
+        <div className={s.contactsBlock} id={"contact"}>
             <div className={containerStyle.container}>
                 <div className={s.field}>
-                    <h2>Контакты</h2>
+                    <h2>Contact Me</h2>
                     <div className={s.form}>
                         <form action="">
-                            <input type="text"/>
-                            <input type="text"/>
-                            <textarea name="" id=""></textarea>
+                            <TextField className={s.input} id="inputName" label="Your Name" variant="outlined"/>
+                            <TextField id="inputMail" label="Your Email" variant="outlined"/>
+                            <TextField multiline
+                                       rows={7}
+                                       rowsMax={7}
+                                       id="TextArea" label="Your message" variant="outlined"
+                            />
                         </form>
                     </div>
-                    <Button name={"Отправить"}/>
+                    <Button  name={"Send message"}/>
                 </div>
             </div>
         </div>

@@ -1,0 +1,16 @@
+.socials {
+  margin-top: 20px;
+  display: flex;
+  a {
+    margin: 0 13px;
+    img {
+      width: 32px;
+      height: 32px;
+      transition: opacity 0.3s 0s ease;
+      &:hover {
+        opacity: 0.4;
+      }
+    }
+
+  }
+}

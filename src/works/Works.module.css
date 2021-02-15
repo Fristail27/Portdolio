@@ -1,12 +1,13 @@
 .worksBlock{
-    min-height: 100vh;
-    background-color: #a3b9d7;
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .field {
     height: 80%;
     width: 100%;
-    border: 1px solid;
     display: flex;
     flex-direction: column;
 }
@@ -21,9 +22,14 @@
     justify-content: space-between;
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1100px) {
     .works {
         flex-direction: column;
         align-items: center;
+    }
+}
+@media screen and (min-width: 1100px) {
+    .works {
+        margin-bottom: 15px;
     }
 }
