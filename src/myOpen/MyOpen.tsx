@@ -17,10 +17,9 @@ const MyOpen = () => {
                         Frontend-developer
                     </h1>
                     <p>I have rich experience in web site design & building and customization. Also I am good at html,
-                        css, javascript, wordpress, php, jquery, bootstrap. I love to talk with you about our unique
+                        css, javascript, React, Redux. I love to talk with you about our unique
                         approach. Feel free to contact me writing an email with your project idea.</p>
                 </div>
-
             </div>
         </div>
     );
