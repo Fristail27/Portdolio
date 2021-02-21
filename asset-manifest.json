@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.24d79fad.chunk.css",
-    "main.js": "/Portfolio/static/js/main.fd0c0253.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.fd0c0253.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.53d5a92c.chunk.css",
+    "main.js": "/Portfolio/static/js/main.e7501e44.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.e7501e44.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.ef8c1325.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.ef8c1325.js.map",
     "static/js/2.c542fe32.chunk.js": "/Portfolio/static/js/2.c542fe32.chunk.js",
@@ -10,13 +10,14 @@
     "static/js/3.2e7a44c2.chunk.js": "/Portfolio/static/js/3.2e7a44c2.chunk.js",
     "static/js/3.2e7a44c2.chunk.js.map": "/Portfolio/static/js/3.2e7a44c2.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "static/css/main.24d79fad.chunk.css.map": "/Portfolio/static/css/main.24d79fad.chunk.css.map",
+    "static/css/main.53d5a92c.chunk.css.map": "/Portfolio/static/css/main.53d5a92c.chunk.css.map",
     "static/js/2.c542fe32.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.c542fe32.chunk.js.LICENSE.txt",
     "static/media/Main.module.scss": "/Portfolio/static/media/125.93211f16.jpg",
     "static/media/Freelance.module.scss": "/Portfolio/static/media/14977815808436_1920x1200.c4230f84.jpg",
     "static/media/4124798-app-development-mobile-mobile-development-mobile-software-mobile-ui_113893.082ec3b1.svg": "/Portfolio/static/media/4124798-app-development-mobile-mobile-development-mobile-software-mobile-ui_113893.082ec3b1.svg",
-    "static/media/FBicon.950fddb4.svg": "/Portfolio/static/media/FBicon.950fddb4.svg",
+    "static/media/AlexeyRyzhovCV.3369ff53.pdf": "/Portfolio/static/media/AlexeyRyzhovCV.3369ff53.pdf",
     "static/media/atom_88925.ee4401ee.svg": "/Portfolio/static/media/atom_88925.ee4401ee.svg",
+    "static/media/codewars_logo_icon_145389.880ffc1d.svg": "/Portfolio/static/media/codewars_logo_icon_145389.880ffc1d.svg",
     "static/media/config_typescript_icon_132469.e8f05e06.svg": "/Portfolio/static/media/config_typescript_icon_132469.e8f05e06.svg",
     "static/media/dnahelixmagnifiersearchtesting_123083.3c290d92.svg": "/Portfolio/static/media/dnahelixmagnifiersearchtesting_123083.3c290d92.svg",
     "static/media/file_html_icon_161333.1de03bd1.svg": "/Portfolio/static/media/file_html_icon_161333.1de03bd1.svg",
@@ -31,7 +32,7 @@
   "entrypoints": [
     "static/js/runtime-main.ef8c1325.js",
     "static/js/2.c542fe32.chunk.js",
-    "static/css/main.24d79fad.chunk.css",
-    "static/js/main.fd0c0253.chunk.js"
+    "static/css/main.53d5a92c.chunk.css",
+    "static/js/main.e7501e44.chunk.js"
   ]
 }
