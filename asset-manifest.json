@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.e140bec9.chunk.css",
-    "main.js": "/Portfolio/static/js/main.1d8dec8c.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.1d8dec8c.chunk.js.map",
-    "runtime-main.js": "/Portfolio/static/js/runtime-main.74d8c886.js",
-    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.74d8c886.js.map",
-    "static/js/2.dcbbe8fe.chunk.js": "/Portfolio/static/js/2.dcbbe8fe.chunk.js",
-    "static/js/2.dcbbe8fe.chunk.js.map": "/Portfolio/static/js/2.dcbbe8fe.chunk.js.map",
-    "static/js/3.006f9bdc.chunk.js": "/Portfolio/static/js/3.006f9bdc.chunk.js",
-    "static/js/3.006f9bdc.chunk.js.map": "/Portfolio/static/js/3.006f9bdc.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.8afee469.chunk.css",
+    "main.js": "/Portfolio/static/js/main.821b2372.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.821b2372.chunk.js.map",
+    "runtime-main.js": "/Portfolio/static/js/runtime-main.68cfd8d6.js",
+    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.68cfd8d6.js.map",
+    "static/js/2.3dc7ec52.chunk.js": "/Portfolio/static/js/2.3dc7ec52.chunk.js",
+    "static/js/2.3dc7ec52.chunk.js.map": "/Portfolio/static/js/2.3dc7ec52.chunk.js.map",
+    "static/js/3.99dd1d09.chunk.js": "/Portfolio/static/js/3.99dd1d09.chunk.js",
+    "static/js/3.99dd1d09.chunk.js.map": "/Portfolio/static/js/3.99dd1d09.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "static/css/main.e140bec9.chunk.css.map": "/Portfolio/static/css/main.e140bec9.chunk.css.map",
-    "static/js/2.dcbbe8fe.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.dcbbe8fe.chunk.js.LICENSE.txt",
+    "static/css/main.8afee469.chunk.css.map": "/Portfolio/static/css/main.8afee469.chunk.css.map",
+    "static/js/2.3dc7ec52.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.3dc7ec52.chunk.js.LICENSE.txt",
     "static/media/Main.module.scss": "/Portfolio/static/media/125.93211f16.jpg",
     "static/media/Freelance.module.scss": "/Portfolio/static/media/14977815808436_1920x1200.c4230f84.jpg",
     "static/media/4124798-app-development-mobile-mobile-development-mobile-software-mobile-ui_113893.082ec3b1.svg": "/Portfolio/static/media/4124798-app-development-mobile-mobile-development-mobile-software-mobile-ui_113893.082ec3b1.svg",
@@ -30,9 +30,9 @@
     "static/media/whatsapp_icon-icons.com_65489.53bd449e.svg": "/Portfolio/static/media/whatsapp_icon-icons.com_65489.53bd449e.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.74d8c886.js",
-    "static/js/2.dcbbe8fe.chunk.js",
-    "static/css/main.e140bec9.chunk.css",
-    "static/js/main.1d8dec8c.chunk.js"
+    "static/js/runtime-main.68cfd8d6.js",
+    "static/js/2.3dc7ec52.chunk.js",
+    "static/css/main.8afee469.chunk.css",
+    "static/js/main.821b2372.chunk.js"
   ]
 }
