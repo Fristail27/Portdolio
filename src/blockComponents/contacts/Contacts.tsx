@@ -1,7 +1,7 @@
 import React from "react";
 import s from "./Contacts.module.css"
-import containerStyle from "./../common/styles/Container.module.css"
-import Button from "../common/button/Button";
+import containerStyle from "../../common/styles/Container.module.css"
+import Button from "../../common/button/Button";
 import {TextField} from "@material-ui/core";
 
 const Contacts = () => {

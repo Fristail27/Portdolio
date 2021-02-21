@@ -1,6 +1,6 @@
 import React from "react";
 import s from "./Freelance.module.scss"
-import containerStyle from "./../common/styles/Container.module.css"
+import containerStyle from "../../common/styles/Container.module.css"
 import {Link} from "react-scroll";
 
 const Freelance = () => {

@@ -1,7 +1,7 @@
 import React from 'react';
 import s from './MyOpen.module.css';
-import styleContainer from "./../common/styles/Container.module.css"
-import Photo from "../img/photo.png"
+import styleContainer from "../../common/styles/Container.module.css"
+import Photo from "../../img/photo.png"
 
 const MyOpen = () => {
     return (
@@ -16,9 +16,11 @@ const MyOpen = () => {
                         <br/>
                         Frontend-developer
                     </h1>
-                    <p>I have rich experience in web site design & building and customization. Also I am good at html,
-                        css, javascript, React, Redux. I love to talk with you about our unique
-                        approach. Feel free to contact me writing an email with your project idea.</p>
+                    <p>Front-end developer with experience
+                        creating SPA using technologies such as: React, TS/JS, Redux, HTML,
+                        CSS.My free time is dedicated to Codewars and becoming familiar with NodeJS and Express.js. In
+                        the future I see myself as a Full Stack Developer. Ready to consider project work and full-time
+                        employment.</p>
                 </div>
             </div>
         </div>

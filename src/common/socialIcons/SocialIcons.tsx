@@ -1,17 +1,17 @@
 import React from "react";
 import s from "./SocialIcons.module.scss";
-import FBIcon from "../../img/FBicon.svg";
-import GitHubIcon from "../../img/github_logo_icon_143772.svg";
-import VKIcon from "../../img/vk_icon_135042.svg";
-import WhatsAppIcon from "../../img/whatsapp_icon-icons.com_65489.svg";
-import TelegrammIcon from "../../img/telegram_icon_131945.svg";
-import Din from "../../img/linkedin_logo_icon_143748.svg";
+import CodeWarsIcon from "../../img/links/codewars_logo_icon_145389.svg";
+import GitHubIcon from "../../img/links/github_logo_icon_143772.svg";
+import VKIcon from "../../img/links/vk_icon_135042.svg";
+import WhatsAppIcon from "../../img/links/whatsapp_icon-icons.com_65489.svg";
+import TelegrammIcon from "../../img/links/telegram_icon_131945.svg";
+import Din from "../../img/links/linkedin_logo_icon_143748.svg";
 
 const SocialIcons: React.FC = () => {
     return (
         <div className={s.socials}>
-            <a target="blank" href="https://www.facebook.com">
-                <img src={FBIcon} alt="no"/>
+            <a target="blank" href="https://www.codewars.com/users/Fristail27">
+                <img src={CodeWarsIcon} alt="no"/>
             </a>
             <a target="blank" href="https://github.com/Fristail27">
                 <img src={GitHubIcon} alt="no"/>

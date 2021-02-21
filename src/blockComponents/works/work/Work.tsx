@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import s from "./Work.module.css"
-import Button from "../../common/button/Button";
+import Button from "../../../common/button/Button";
 
 type WorkPropsType = {
     name: string;

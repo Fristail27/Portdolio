@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.scss';
-import Header from "./header/Header";
-import Main from "./main/Main";
-import Skills from "./skills/Skills";
-import Works from "./works/Works";
-import Freelance from "./freelance/Freelance";
-import Contacts from "./contacts/Contacts";
-import Footer from "./footer/Footer";
-import MyOpen from "./myOpen/MyOpen";
+import Header from "./blockComponents/header/Header";
+import Main from "./blockComponents/main/Main";
+import Skills from "./blockComponents/skills/Skills";
+import Works from "./blockComponents/works/Works";
+import Freelance from "./blockComponents/freelance/Freelance";
+import Contacts from "./blockComponents/contacts/Contacts";
+import Footer from "./blockComponents/footer/Footer";
+import MyOpen from "./blockComponents/myOpen/MyOpen";
 
 function App() {
   return (

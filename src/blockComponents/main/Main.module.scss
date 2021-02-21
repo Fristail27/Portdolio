@@ -4,11 +4,15 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-image: url('../img/125.jpg');
+  background-image: url('../../img/125.jpg');
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: cover;
-
+  a {
+    margin-top: 10px;
+    text-decoration: none;
+    color: black;
+  }
   .text {
     position: relative;
     font-size: 100px;

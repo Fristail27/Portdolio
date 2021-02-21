@@ -1,7 +1,7 @@
 import React from "react";
 import s from "./Footer.module.css"
-import containerStyle from "./../common/styles/Container.module.css"
-import SocialIcons from "../common/socialIcons/SocialIcons";
+import containerStyle from "../../common/styles/Container.module.css"
+import SocialIcons from "../../common/socialIcons/SocialIcons";
 
 const Footer = () => {
     return (

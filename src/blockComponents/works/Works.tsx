@@ -1,8 +1,8 @@
 import React from "react";
 import s from "./Works.module.css"
-import containerStyle from "./../common/styles/Container.module.css"
+import containerStyle from "../../common/styles/Container.module.css"
 import Work from "./work/Work";
-import Counter from "./../img/works/Screenshot_1.jpg"
+import Counter from "../../img/works/Screenshot_1.jpg"
 
 const Works = () => {
     return (
