@@ -22,7 +22,7 @@ const Contacts = () => {
                             />
                         </form>
                     </div>
-                    <Button  name={"Send message"}/>
+                    <div className={s.button}> <Button  name={"Send message"}/></div>
                 </div>
             </div>
         </div>
