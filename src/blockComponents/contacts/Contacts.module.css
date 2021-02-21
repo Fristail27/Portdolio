@@ -1,6 +1,10 @@
 .contactsBlock{
     min-height: 62vh;
     background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .field {
     height: 70%;
@@ -20,20 +24,11 @@
 }
 
 .form {
-    height: 400px;
+    height: 450px;
     max-width: 500px;
     margin: 0 auto;
 }
-.form form {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 300px;
-}
-.button {
-    margin: 20px 0;
-}
+
 
 @media screen and (min-width: 575px) {
     .form {

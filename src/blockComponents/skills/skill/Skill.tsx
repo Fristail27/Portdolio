@@ -8,7 +8,6 @@ type SkillPropsType = {
 }
 
 function Skill(props: SkillPropsType) {
-    console.log(props)
     return (
         <div className={s.skill}>
             <div className={s.icon}>

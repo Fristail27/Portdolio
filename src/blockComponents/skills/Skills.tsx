@@ -17,7 +17,7 @@ function Skills() {
                 <h2 className={s.title}>Skills</h2>
                 <div className={s.skills}>
                     <Skill img={rea} title="React"
-                           description="I use the React library in my projects. With the React I use React-router-dom, React-redux, React-scroll, Material UI, Ant Design, Axios. Hooks, HOCs, Class Component, Functional Component,"/>
+                           description="I use the React library in my projects. With the React I use React-router-dom, React-redux, Material UI, Ant Design, Axios. Hooks, HOCs, Class Component, Functional Component,"/>
                     <Skill img={JS} title="Redux"
                            description="I use the Redux library in my projects. With the Redux I use React-Redux, Redux-thunk, Redux-form.FLUX principe. HOC connect and hooks useSelector/useDispatch"/>
                     <Skill img={UIIX} title="JavaScript"

@@ -8,6 +8,7 @@ import Freelance from "./blockComponents/freelance/Freelance";
 import Contacts from "./blockComponents/contacts/Contacts";
 import Footer from "./blockComponents/footer/Footer";
 import MyOpen from "./blockComponents/myOpen/MyOpen";
+import UpButton from "./common/upButton/UpButton";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Freelance/>
       <Contacts/>
       <Footer/>
+      <UpButton/>
     </div>
   );
 }
