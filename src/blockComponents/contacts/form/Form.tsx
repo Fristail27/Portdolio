@@ -1,31 +1,67 @@
-import React, {FormEvent} from "react";
+import React, {ChangeEvent, useReducer} from "react";
 import {TextField} from "@material-ui/core";
-import emailjs from "emailjs-com";
 import Button from "../../../common/button/Button";
 import s from './Form.module.css'
+import formReducer, {
+    changeEmailValueAC,
+    changeMessageValueAC,
+    changeNameValueAC,
+    initialState, preloaderStatusChangeAC,
+    setErrorTextAC,
+    submitFormEventAC
+} from "../../../state/form-reducer";
+import {api} from "../../../api/api";
+import Preloader from "../preloader/Preloader";
 
 const Form = () => {
-    function sendEmail(e:any) {  // пофиксить any
-        e.preventDefault();
-        emailjs.sendForm('myID_228595605405', 'template_kw4bade', e.target, 'user_Rwv74PpOgOBagouH8o8nq')
-            .then((result) => {
-                window.location.reload()
-            }, (error) => {
-                console.log(error.text);
-            });
+
+    const [state, dispatch] = useReducer(formReducer, initialState);
+
+    const nameChangeHandle = (e: ChangeEvent<HTMLInputElement>) => {
+        dispatch(changeNameValueAC(e.currentTarget.value))
     }
+    const emailChangeHandle = (e: ChangeEvent<HTMLInputElement>) => {
+        dispatch(changeEmailValueAC(e.currentTarget.value))
+    }
+    const messageChangeHandle = (e: ChangeEvent<HTMLInputElement>) => {
+        dispatch(changeMessageValueAC(e.currentTarget.value))
+    }
+
+    function sendEmail(e: any) {  // пофиксить any
+        dispatch(preloaderStatusChangeAC(true))
+        e.preventDefault();
+        api.sendMessage(e)
+            .then((res) => {
+                dispatch(submitFormEventAC())
+                dispatch(preloaderStatusChangeAC(false))
+            }).catch((error) => {
+            dispatch(setErrorTextAC(error));
+            dispatch(preloaderStatusChangeAC(false))
+        })
+    }
+
     return (
         <form onSubmit={sendEmail}>
-            <TextField type="text" name="from_name" id="inputName" label="Your Name" variant="outlined"/>
-            <TextField id="inputMail" label="Your Email" variant="outlined" type="text" name="from_email"/>
+            <TextField disabled={state.preloaderStatus} onChange={nameChangeHandle} value={state.nameValue} name="from_name" id="inputName"
+                       label="Your Name" variant="outlined"/>
+            <TextField disabled={state.preloaderStatus} onChange={emailChangeHandle} value={state.emailValue} id="inputMail" label="Your Email"
+                       variant="outlined" type="email" name="from_email"/>
             <TextField multiline
                        rows={7}
                        rowsMax={7}
+                       disabled={state.preloaderStatus}
                        id="TextArea" label="Your message" variant="outlined"
-                       type="text" name="message"
+                       name="message"
+                       onChange={messageChangeHandle} value={state.messageValue}
             />
+            {state.preloaderStatus &&  <div className={s.preloader}>
+                <Preloader/>
+            </div>}
+            {state.error &&  <div className={s.preloader}>
+               <span>{state.error}</span>
+            </div>}
             <div className={s.button}>
-                <Button type={"submit"} name={"Send message"}/>
+                <Button disabled={state.preloaderStatus} type={"submit"} name={"Send message"}/>
             </div>
         </form>)
 }

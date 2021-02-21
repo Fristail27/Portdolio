@@ -9,4 +9,11 @@ form {
     flex-direction: column;
     justify-content: space-between;
     width: 300px;
+    position: relative;
+}
+
+.preloader {
+    position: absolute;
+    width: 100%;
+    top: 77%;
 }

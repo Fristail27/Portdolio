@@ -13,7 +13,7 @@ const Freelance = () => {
                         to="contact"
                         spy={true}
                         smooth={true}
-                        offset={60}
+                        offset={-60}
                         duration= {500}
                     >Hide Me</Link>
                 </div>

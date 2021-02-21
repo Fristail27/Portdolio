@@ -26,3 +26,9 @@ p {
     width: 360px;
     height: 480px;
 }
+
+@media screen and (max-width: 934px) {
+    .mainBlock {
+        margin-top: 15px;
+    }
+}
