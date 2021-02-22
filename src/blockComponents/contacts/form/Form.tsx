@@ -62,16 +62,20 @@ const Form = () => {
 
     return (
         <form onSubmit={sendEmail}>
-            <TextField error={nameInputError} helperText={helperTextForNameValue} disabled={state.preloaderStatus} onFocus={firstTouchNameInput} onChange={nameChangeHandle} value={state.nameValue} name="from_name" id="inputName"
+            <TextField error={nameInputError} helperText={helperTextForNameValue} disabled={state.preloaderStatus}
+                       onBlur={firstTouchNameInput} onChange={nameChangeHandle} value={state.nameValue}
+                       name="from_name" id="inputName"
                        label="Your Name" variant="outlined"/>
-            <TextField error={emailInputError} helperText={helperTextForEmailValue} disabled={state.preloaderStatus} onChange={emailChangeHandle} onFocus={firstTouchEmailInput} value={state.emailValue} id="inputMail" label="Your Email"
+            <TextField error={emailInputError} helperText={helperTextForEmailValue} disabled={state.preloaderStatus}
+                       onChange={emailChangeHandle} onBlur={firstTouchEmailInput} value={state.emailValue}
+                       id="inputMail" label="Your Email"
                        variant="outlined" type="email" name="from_email"/>
             <TextField multiline
                        rows={7}
                        rowsMax={7}
                        error={messageInputError}
                        helperText={helperTextForMessageValue}
-                       onFocus={firstTouchMessageInput}
+                       onBlur={firstTouchMessageInput}
                        disabled={state.preloaderStatus}
                        id="TextArea" label="Your message" variant="outlined"
                        name="message"
