@@ -18,9 +18,9 @@ function Skills() {
                 <div className={s.skills}>
                     <Skill img={rea} title="React"
                            description="I use the React library in my projects. With the React I use React-router-dom, React-redux, Material UI, Ant Design, Axios. Hooks, HOCs, Class Component, Functional Component,"/>
-                    <Skill img={JS} title="Redux"
+                    <Skill img={UIIX} title="Redux"
                            description="I use the Redux library in my projects. With the Redux I use React-Redux, Redux-thunk, Redux-form.FLUX principe. HOC connect and hooks useSelector/useDispatch"/>
-                    <Skill img={UIIX} title="JavaScript"
+                    <Skill img={JS} title="JavaScript"
                            description="ES6, SOLID, Async functions, REST API, OOP, Classes"/>
                 </div>
                 <div className={s.skills}>
