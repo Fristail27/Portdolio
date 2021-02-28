@@ -3,6 +3,7 @@ import s from "./Works.module.css"
 import containerStyle from "../../common/styles/Container.module.css"
 import Work from "./work/Work";
 import Counter from "../../img/works/Screenshot_1.jpg"
+import TodolistImg from "../../img/works/TodolistImg.jpg"
 
 const Works = () => {
     return (
@@ -15,10 +16,14 @@ const Works = () => {
                     <div className={s.works}>
                         <Work img={Counter}
                               name="Counter"
-                              description={"React, Redux, JavaScript, RestAPI, HTML/CSS, functional and classes components, hooks, connect"}
+                              description={"React, Redux, JavaScript, TypeScript, HTML/CSS, functional components, hooks, Material UI"}
                               gitHubLink={'https://github.com/Fristail27/Counter/tree/counter-redux'}
                               demoLink={'https://fristail27.github.io/Counter'}/>
-                        <Work name="Проект 1" description={"Описание проекта 1"}/>
+                        <Work name="Todolist"
+                              img={TodolistImg}
+                              description={"React, Redux, JavaScript, TypeScript, RestAPI, HTML/CSS, functional components, hooks, Axios, Material UI, Redux-thunk, Formik,"}
+                              gitHubLink={'https://github.com/Fristail27/Todolist'}
+                              demoLink={'https://fristail27.github.io/Todolist/'}/>
                         <Work name="Проект 2" description={"Описание проекта 2"}/>
                     </div>
                     <div className={s.works}>
