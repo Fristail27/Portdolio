@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.8afee469.chunk.css",
-    "main.js": "/Portfolio/static/js/main.684b1f1f.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.684b1f1f.chunk.js.map",
+    "main.js": "/Portfolio/static/js/main.8bd95ec7.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.8bd95ec7.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.68cfd8d6.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.68cfd8d6.js.map",
     "static/js/2.3dc7ec52.chunk.js": "/Portfolio/static/js/2.3dc7ec52.chunk.js",
@@ -15,6 +15,7 @@
     "static/media/Main.module.scss": "/Portfolio/static/media/125.93211f16.jpg",
     "static/media/Freelance.module.scss": "/Portfolio/static/media/14977815808436_1920x1200.c4230f84.jpg",
     "static/media/AlexeyRyzhovCV.5751393f.pdf": "/Portfolio/static/media/AlexeyRyzhovCV.5751393f.pdf",
+    "static/media/TodolistImg.55423c4f.jpg": "/Portfolio/static/media/TodolistImg.55423c4f.jpg",
     "static/media/atom_88925.ee4401ee.svg": "/Portfolio/static/media/atom_88925.ee4401ee.svg",
     "static/media/codewars_logo_icon_145389.880ffc1d.svg": "/Portfolio/static/media/codewars_logo_icon_145389.880ffc1d.svg",
     "static/media/config_typescript_icon_132469.e8f05e06.svg": "/Portfolio/static/media/config_typescript_icon_132469.e8f05e06.svg",
@@ -33,6 +34,6 @@
     "static/js/runtime-main.68cfd8d6.js",
     "static/js/2.3dc7ec52.chunk.js",
     "static/css/main.8afee469.chunk.css",
-    "static/js/main.684b1f1f.chunk.js"
+    "static/js/main.8bd95ec7.chunk.js"
   ]
 }
