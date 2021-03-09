@@ -13,14 +13,22 @@ import formReducer, {
 import {api} from "../../../api/api";
 import Preloader from "../preloader/Preloader";
 
+const Tada = require('react-reveal/Tada');
+
 const Form = () => {
 
     const [state, dispatch] = useReducer(formReducer, initialState);
 
     // обработчики изменения инпутов
-    const nameChangeHandle = (e: ChangeEvent<HTMLInputElement>) => {dispatch(changeNameValueAC(e.currentTarget.value))}
-    const emailChangeHandle = (e: ChangeEvent<HTMLInputElement>) => {dispatch(changeEmailValueAC(e.currentTarget.value))}
-    const messageChangeHandle = (e: ChangeEvent<HTMLInputElement>) => {dispatch(changeMessageValueAC(e.currentTarget.value))}
+    const nameChangeHandle = (e: ChangeEvent<HTMLInputElement>) => {
+        dispatch(changeNameValueAC(e.currentTarget.value))
+    }
+    const emailChangeHandle = (e: ChangeEvent<HTMLInputElement>) => {
+        dispatch(changeEmailValueAC(e.currentTarget.value))
+    }
+    const messageChangeHandle = (e: ChangeEvent<HTMLInputElement>) => {
+        dispatch(changeMessageValueAC(e.currentTarget.value))
+    }
 
     // функция отправки сообщения.
     function sendEmail(e: BaseSyntheticEvent) {  // пофиксить any
@@ -43,10 +51,17 @@ const Form = () => {
         }
 
     }
+
     // обработчики активации первого касания
-    const firstTouchNameInput = () => {dispatch(setFirstTouchNameAC())}
-    const firstTouchEmailInput = () => {dispatch(setFirstTouchEmailAC())}
-    const firstTouchMessageInput = () => {dispatch(setFirstTouchMessageAC())}
+    const firstTouchNameInput = () => {
+        dispatch(setFirstTouchNameAC())
+    }
+    const firstTouchEmailInput = () => {
+        dispatch(setFirstTouchEmailAC())
+    }
+    const firstTouchMessageInput = () => {
+        dispatch(setFirstTouchMessageAC())
+    }
 
     // условия ошибок для инпутов
     const nameInputError = state.firstTouchNameInput ? state.nameValue.length < 4 : false
@@ -81,14 +96,16 @@ const Form = () => {
                        name="message"
                        onChange={messageChangeHandle} value={state.messageValue}
             />
-            {state.preloaderStatus &&  <div className={s.preloader}>
+            {state.preloaderStatus && <div className={s.preloader}>
                 <Preloader/>
             </div>}
-            {state.error &&  <div className={s.preloader}>
-               <span>{state.error}</span>
+            {state.error && <div className={s.preloader}>
+                <span>{state.error}</span>
             </div>}
             <div className={s.button}>
-                <Button disabled={state.preloaderStatus} type={"submit"} name={"Send message"}/>
+                <Tada>
+                    <Button disabled={state.preloaderStatus} type={"submit"} name={"Send message"}/>
+                </Tada>
             </div>
         </form>)
 }

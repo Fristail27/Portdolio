@@ -4,17 +4,27 @@ import SocialIcons from "../../common/socialIcons/SocialIcons";
 import Button from '../../common/button/Button';
 //@ts-ignore
 import CV from "./../../cv/AlexeyRyzhovCV.pdf"
+//@ts-ignore
+import ReactTypingEffect from 'react-typing-effect'
 
+const Flip = require('react-reveal/Flip');
 
 function Main() {
     return (
+
         <div className={s.mainBlock}>
+
             <div className={s.text}>
-                <span>Frontend-developer</span>
+                <ReactTypingEffect
+                    text={["Frontend-developer"]}
+                />
             </div>
-            <SocialIcons/>
-            <a href={CV} download><Button name="Download Resume"/></a>
+            <Flip top>
+                <SocialIcons/>
+                <a href={CV} download><Button name="Download Resume"/></a>
+            </Flip>
         </div>
+
     )
 }
 

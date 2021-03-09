@@ -4,6 +4,7 @@ import containerStyle from "../../common/styles/Container.module.css"
 import Work from "./work/Work";
 import Counter from "../../img/works/Screenshot_1.jpg"
 import TodolistImg from "../../img/works/TodolistImg.jpg"
+const Fade = require('react-reveal/Fade');
 
 const Works = () => {
     return (
@@ -14,6 +15,7 @@ const Works = () => {
                         <h2>My works</h2>
                     </div>
                     <div className={s.works}>
+                        <Fade left>
                         <Work img={Counter}
                               name="Counter"
                               description={"React, Redux, JavaScript, TypeScript, HTML/CSS, functional components, hooks, Material UI"}
@@ -25,11 +27,14 @@ const Works = () => {
                               gitHubLink={'https://github.com/Fristail27/Todolist'}
                               demoLink={'https://fristail27.github.io/Todolist/'}/>
                         <Work name="Проект 2" description={"Описание проекта 2"}/>
+                            </Fade>
                     </div>
                     <div className={s.works}>
+                        <Fade right>
                         <Work name="Проект 1" description={"Описание проекта 1"}/>
                         <Work name="Проект 1" description={"Описание проекта 1"}/>
                         <Work name="Проект 2" description={"Описание проекта 2"}/>
+                            </Fade>
                     </div>
                 </div>
             </div>
