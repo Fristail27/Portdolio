@@ -1,6 +1,9 @@
 .freestyleBlock {
   height: 40vh;
   background-image: url("../../img/14977815808436_1920x1200.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   background-attachment: fixed;
 }
 
@@ -23,7 +26,6 @@
 .field {
    a{
      cursor: pointer;
-    //color: #e74c3c;
     font-size: 35px;
     line-height: 40px;
     position: relative;
