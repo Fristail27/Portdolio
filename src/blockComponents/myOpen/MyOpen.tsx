@@ -1,16 +1,20 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import s from './MyOpen.module.css';
 import styleContainer from "../../common/styles/Container.module.css"
-import Photo from "../../img/photo.png"
+import Photo from "../../assets/photo.png"
+import {AppContext} from "../../App";
+import {textContent} from "../../constants/textContent";
 
 const Slide = require('react-reveal/Slide');
 
 const MyOpen = () => {
+    const {lang} = useContext(AppContext)
     return (
         <div id={"about"} className={s.mainBlock}>
             <div className={styleContainer.container}>
                 <div className={s.photo}>
                     <Slide left>
+                        {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
                         <img src={Photo} alt="photo"/>
                     </Slide>
                 </div>
@@ -18,22 +22,12 @@ const MyOpen = () => {
 
                     <h1>
                         <Slide top>
-                            I'm Alexey Ryzhov,
+                            {textContent[lang].myOpen.myName}
                             <br/>
-                            Frontend-developer
+                            {textContent[lang].main.proff}
                         </Slide>
                     </h1>
-                    <p>
-                        <Slide bottom>
-                            Front-end developer with experience
-                            creating SPA using technologies such as: React, TS/JS, Redux, HTML,
-                            CSS.My free time is dedicated to Codewars and becoming familiar with NodeJS and Express.js.
-                            In
-                            the future I see myself as a Full Stack Developer. Ready to consider project work and
-                            full-time
-                            employment.
-                        </Slide></p>
-
+                    <p><Slide bottom>{textContent[lang].myOpen.myDescription}</Slide></p>
                 </div>
 
             </div>

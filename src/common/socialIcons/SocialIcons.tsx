@@ -1,11 +1,11 @@
 import React from "react";
 import s from "./SocialIcons.module.scss";
-import CodeWarsIcon from "../../img/links/codewars_logo_icon_145389.svg";
-import GitHubIcon from "../../img/links/github_logo_icon_143772.svg";
-import VKIcon from "../../img/links/vk_icon_135042.svg";
-import WhatsAppIcon from "../../img/links/whatsapp_icon-icons.com_65489.svg";
-import TelegrammIcon from "../../img/links/telegram_icon_131945.svg";
-import Din from "../../img/links/linkedin_logo_icon_143748.svg";
+import CodeWarsIcon from "../../assets/links/codewars_logo_icon_145389.svg";
+import GitHubIcon from "../../assets/links/github_logo_icon_143772.svg";
+import VKIcon from "../../assets/links/vk_icon_135042.svg";
+import WhatsAppIcon from "../../assets/links/whatsapp_icon-icons.com_65489.svg";
+import TelegrammIcon from "../../assets/links/telegram_icon_131945.svg";
+import Din from "../../assets/links/linkedin_logo_icon_143748.svg";
 
 const SocialIcons: React.FC = () => {
     return (

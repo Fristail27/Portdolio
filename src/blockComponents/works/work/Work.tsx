@@ -8,6 +8,7 @@ type WorkPropsType = {
     img?: string;
     gitHubLink?: string;
     demoLink?:string
+    demoLinkDisabled?:boolean
 }
 
 const Work: React.FC<WorkPropsType> = (props) => {
@@ -22,7 +23,7 @@ const Work: React.FC<WorkPropsType> = (props) => {
             onMouseOver={() => setBlockStatus(true)}
             className={s.workBlock}>
             <div className={s.captureBlock}>
-                <img src={props.img} alt=""/>
+                <img style={{width: '100%', height: '100%'}} src={props.img} alt=""/>
             </div>
             {blockStatus
                 ? <div className={s.onHover}>
@@ -32,7 +33,7 @@ const Work: React.FC<WorkPropsType> = (props) => {
                     <div className={s.line}/>
                     <div className={s.buttons}>
                         <Button onClick={() =>  window.open(props.gitHubLink as string)} name={"GitHub"}/>
-                        <Button onClick={() =>  window.open(props.demoLink as string)} name={"Demo"}/>
+                        <Button disabled={props.demoLinkDisabled} onClick={() =>  window.open(props.demoLink as string)} name={"Demo"}/>
                     </div>
                 </div>
                 : ""
